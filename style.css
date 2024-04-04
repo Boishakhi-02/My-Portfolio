@@ -71,11 +71,10 @@ margin-left: 30px;
 }
 
 .global-btn a:hover{
-    
     background-color: black;
     color:var(--secondary-color);
     padding: 8px;
-    border-radius: 5px;
+    border-radius: 50%;
 }
 .first-section{
     background-image: url(web-work/web-image3.jpg);
@@ -152,6 +151,7 @@ margin-left: 30px;
     }
      .global-btn{
         text-align: center;
+        border-radius: 50%;
     }
     /* service section */
     .grid-container{
@@ -160,45 +160,39 @@ margin-left: 30px;
 
 
     }
+    .container{
+        
+        display: grid;
+        grid-template-columns: auto auto;
+    }
 .grid-single-item{
     padding: 3rem;
     text-align: center;
 
 }
-.grid-single-item .fa-icon-size{
+.single-item{
+     padding: 3rem;
+    text-align: center;
+}
+.grid-single-item .fa-icon-size, .single-item .fa-icon-size{
     font-size: 4rem;
 }
-.grid-single-item p{
+ .single-item .r{
     color:darkgray ;
+    margin-left: 200px;
+}
+ .single-item .m{
+    color: darkgray;
 }
 /* Work section */
-.grid-single-item .grid-single-image{
+.grid-single-item .grid-single-image, .single-item .grid-single-image{
     width: 200px;
 }
 /* Testimonial section */
-.single-item-color{
-    color:var(--primary-color) !important;
-    margin-top: 4px;
-}
-.work-section .grid-single-image1{
-
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
- .work-section .bbbb{
-
+.work{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 2rem;
-}
-.work-section .mm h2{
-    text-align: center;
-} 
-.work-section{
-    text-align: center;
+    flex: 1;
 }
 /* Footer Section */
 footer{
